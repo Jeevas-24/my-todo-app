@@ -11,7 +11,8 @@ def add_todo():
 
 st.title('My Todo App')
 st.subheader('Routine for you')
-st.write('Just increase the productivity using this')
+st.write('Just increase the <b>productivity</b> using this',
+         unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=todo)
